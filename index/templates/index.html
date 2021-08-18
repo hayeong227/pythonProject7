@@ -16,6 +16,7 @@
     font-style: normal;
 }
     *{ font-family: 'NEXON Lv1 Gothic OTF'; }
+    .carousel-control{ background : none !important; }
     </style>
 </head>
 <body>
@@ -66,8 +67,37 @@
     <input type="text" class="form-control" placeholder="검색어를 입력해주세요">
     </div><br><br>
 
-    <img src="길1.jpg" width="1150">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
 
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slie-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slie-to="1"></li>
+          <li data-target="#myCarousel" data-slie-to="2"></li>
+          <li data-target="#myCarousel" data-slie-to="3"></li>
+      </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="길1.jpg" class="img-responsive center-block">
+            </div>
+            <div class="item">
+                <img src="길2.jpg" class="img-responsive center-block">
+            </div>
+            <div class="item">
+                <img src="길3.jpg" class="img-responsive center-block">
+            </div>
+            <div class="item">
+                <img src="길4.jpg" class="img-responsive center-block">
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+  </div>
 
         <ul class="nav nav-tabs">
             <li class="nav-item">
@@ -101,6 +131,9 @@
                 <a class="nav-link" data-toggle="tab" href="#도봉구">도봉구</a>
             </li>
         </ul>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 
 
