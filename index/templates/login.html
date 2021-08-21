@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <!-- 헤더파일 포함시키기 -->
+    {% include "header.html" %}
+    <!-- 사진폴더가 있는 폴더 불러오기 -->
+    {% load static %}
+
+    <div class="container"> <!-- 1200px 가로 상자 -->
+        <!-- 컨테이너 상자 안에서 구역 나귀 [12조각] -->
+        <div class="col-lg-4"></div> <!-- 4조각 사용 [ 공백 ] -->
+        <div class="col-lg-4"> <!-- 4조각 사용 [ 로그인 ] -->
+            <div align="center">
+                <img src="{% static 'logo2.jpg' %}" width="100px" style="margin:30px">
+            </div>
+
+            <form>
+                <input type="text" class="form-control" placeholder="아이디"><br>
+                <input type="password" class="form-control" placeholder="비밀번호"><br>
+                <input type="submit" value="로그인" class="form-control">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
