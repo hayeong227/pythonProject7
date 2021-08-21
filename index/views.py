@@ -6,3 +6,5 @@ def login( request ) :
     return render( request , "login.html")
 def signup( request ) :
     return render( request , "signup.html")
+def Q_A( request ) :
+    return render( request , "Q_A.html")
