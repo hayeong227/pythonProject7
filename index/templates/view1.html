@@ -6,5 +6,39 @@
 </head>
 <body>
 
+    <!-- 헤더파일 포함시키기 -->
+    {% include "header.html" %}
+    <!-- 사진폴더가 있는 폴더 불러오기 -->
+    {% load static %}
+
+    <div class="container">
+    <table class="table">
+        <tr>
+          <td>작성자</td>
+          <td> 김하영 </td>
+        </tr>
+        <tr>
+          <td>휴대전화</td>
+          <td> 010-xxxx-xxxx</td>
+        </tr>
+        <tr>
+          <td>이메일</td>
+          <td> aakg@naver.com</td>
+        </tr>
+        <tr>
+          <td>제목</td>
+          <td> 질문</td>
+        </tr>
+        <tr>
+            <td>내용</td>
+            <td> 답변 언제??</td>
+        </tr>
+        <tr>
+            <td>첨부파일</td>
+            <td> 없음</td>
+        </tr>
+
+    </table>
+    </div>
 </body>
 </html>

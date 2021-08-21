@@ -10,3 +10,5 @@ def Q_A( request ) :
     return render( request , "Q_A.html")
 def boardwrite( request ) :
     return render( request , "boardwrite.html")
+def view1( request ) :
+    return render( request , "view1.html")
