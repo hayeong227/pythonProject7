@@ -14,3 +14,9 @@ def view1( request ) :
     return render( request , "view1.html")
 def 소개( request ) :
     return render( request , "소개.html")
+def 중랑구( request ) :
+    return render( request , "중랑구.html")
+def 동작구( request ) :
+    return render( request , "동작구.html")
+def 노량진로( request ) :
+    return render( request , "노량진로.html")

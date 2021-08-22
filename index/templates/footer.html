@@ -3,8 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <style>
+    @font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    *{ font-family: 'NEXON Lv1 Gothic OTF'; }
+    .carousel-control{ background : none !important; }
+    </style>
+
 </head>
-<body>
+<body style="background-color: white;">
+    {% load static %}
+
+    <div class="container">
+        <div class="col-lg-3" style="color: black">
+            <img src="{% static 'logo2.jpg' %}" width="150px;">
+        </div>
+        <div class="col-lg-5" style="color: black">
+            <table style="margin-top:30px;" border-spacing : 10px; font-size : 18px>
+                <tr>
+                    <td width="100"> 고객센터 </td>
+                    <td> 000-0000-0000</td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td> hayeong@naver.com </td>
+                </tr>
+                <tr>
+                    <td>홈페이지 소개</td>
+                    <td>제품 소개</td>
+                </tr>
+                <tr>
+                    <td>찾아오는길</td>
+                    <td>대표자 김하영</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-4" style="color: black">
+            <table>
+                <tr>
+                    <td> <img src="{% static '페이스북.png' %}" width="50px;"> </td>
+                    <td> <img src="{% static '인스타그램1.png' %}" width="50px;"> </td>
+                    <td> <img src="{% static '트위터1.png' %}" width="50px;"> </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
 
 </body>
 </html>

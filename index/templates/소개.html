@@ -10,5 +10,14 @@
     {% include "header.html" %}
     <!-- 사진폴더가 있는 폴더 불러오기 -->
     {% load static %}
+
+    <div class="container">
+        <div class="col-lg-6">
+            <img src="{% static '소개.png' %}" width="1100">
+        </div>
+    </div>
+    <div style="margin-top:150px">
+    {% include "footer.html" %}
+    </div>
 </body>
 </html>
