@@ -9,4 +9,5 @@ urlpatterns = [
     path("Q_A" , views.Q_A) ,
     path("boardwrite" , views.boardwrite) ,
     path("view1" , views.view1) ,
+    path("소개" , views.소개) ,
 ]

@@ -12,3 +12,5 @@ def boardwrite( request ) :
     return render( request , "boardwrite.html")
 def view1( request ) :
     return render( request , "view1.html")
+def 소개( request ) :
+    return render( request , "소개.html")
