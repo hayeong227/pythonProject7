@@ -20,3 +20,9 @@ def 동작구( request ) :
     return render( request , "동작구.html")
 def 노량진로( request ) :
     return render( request , "노량진로.html")
+def 매봉로( request ) :
+    return render( request , "매봉로.html")
+def 장승배기로( request ) :
+    return render( request , "장승배기로.html")
+def 상도로( request ) :
+    return render( request , "상도로.html")
