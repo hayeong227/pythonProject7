@@ -16,4 +16,6 @@ urlpatterns = [
     path("매봉로" , views.매봉로) ,
     path("장승배기로" , views.장승배기로) ,
     path("상도로" , views.상도로) ,
+    path("동작대로" , views.동작대로) ,
+    path("사당로" , views.사당로) ,
 ]

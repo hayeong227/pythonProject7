@@ -26,3 +26,7 @@ def 장승배기로( request ) :
     return render( request , "장승배기로.html")
 def 상도로( request ) :
     return render( request , "상도로.html")
+def 동작대로( request ) :
+    return render( request , "동작대로.html")
+def 사당로( request ) :
+    return render( request , "사당로.html")
