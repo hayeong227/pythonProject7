@@ -30,3 +30,31 @@ def 동작대로( request ) :
     return render( request , "동작대로.html")
 def 사당로( request ) :
     return render( request , "사당로.html")
+def 만양로( request ) :
+    return render( request , "만양로.html")
+def 양천구( request ) :
+    return render( request , "양천구.html")
+def 남부순환로( request ) :
+    return render( request , "남부순환로.html")
+def 신월로( request ) :
+    return render( request , "신월로.html")
+def 목동동로( request ) :
+    return render( request , "목동동로.html")
+def 목동서로( request ) :
+    return render( request , "목동서로.html")
+def 중앙로( request ) :
+    return render( request , "중앙로.html")
+def 오목로( request ) :
+    return render( request , "오목로.html")
+def 은평구( request ) :
+    return render( request , "은평구.html")
+def 가좌로( request ) :
+    return render( request , "가좌로.html")
+def 갈현로( request ) :
+    return render( request , "갈현로.html")
+def 불광로( request ) :
+    return render( request , "불광로.html")
+def 수색로( request ) :
+    return render( request , "수색로.html")
+def 서오릉로( request ) :
+    return render( request , "서오릉로.html")

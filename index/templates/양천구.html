@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <!-- 모든 이미지 폴더 불러오기 -->
+    {% load static %}
+    <!-- 분리된 html 파일 불러오기 -->
+    {% include "header.html" %}
+
+    <div class="container">
+        <h4>서울특별시 양천구 쓰레기통 위치</h4>
+        <table>
+            <tbody>
+                <tr>
+                    <td><a href="남부순환로"> <button class="btn btn-link">남부순환로</button></a></td>
+                    <td><a href="신월로"> <button class="btn btn-link">신월로</button></a></td>
+                    <td><a href="목동동로"> <button class="btn btn-link">목동동로</button></a></td>
+                    <td><a href="목동서로"> <button class="btn btn-link">목동서로</button></a></td>
+                    <td><a href="중앙로"> <button class="btn btn-link">중앙로</button></a></td>
+                    <td><a href="오목로"> <button class="btn btn-link">오목로</button></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div style="margin-top:150px">
+    {% include "footer.html" %}
+    </div>
+
+</body>
+</html>
