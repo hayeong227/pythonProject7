@@ -58,3 +58,23 @@ def 수색로( request ) :
     return render( request , "수색로.html")
 def 서오릉로( request ) :
     return render( request , "서오릉로.html")
+def 은평로( request ) :
+    return render( request , "은평로.html")
+def 응암로( request ) :
+    return render( request , "응암로.html")
+def 강서구( request ) :
+    return render( request , "강서구.html")
+def 강서로( request ) :
+    return render( request , "강서로.html")
+def 개화로( request ) :
+    return render( request , "개화로.html")
+def 공항대로( request ) :
+    return render( request , "공항대로.html")
+def 양천로( request ) :
+    return render( request , "양천로.html")
+def 허준로( request ) :
+    return render( request , "허준로.html")
+def 화곡로( request ) :
+    return render( request , "화곡로.html")
+def 방화대로( request ) :
+    return render( request , "방화대로.html")

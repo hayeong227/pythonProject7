@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- 모든 이미지 폴더 불러오기 -->
+    {% load static %}
+    <!-- 분리된 html 파일 불러오기 -->
+    {% include "header.html" %}
+
+<!-- 지도를 표시할 div 입니다 -->
+        <div id="map" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+        <script>
+           var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+    mapOption = {
+        center: new kakao.maps.LatLng(37.598113, 126.915509), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 마커가 표시될 위치입니다
+var markerPosition  = new kakao.maps.LatLng(37.598113, 126.915509);
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+    </script><br>
+<!-- 지도를 표시할 div 입니다 -->
+        <div id="map1" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+        <script>
+           var mapContainer = document.getElementById('map1'), // 지도를 표시할 div
+    mapOption = {
+        center: new kakao.maps.LatLng(37.596939, 126.909420), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 마커가 표시될 위치입니다
+var markerPosition  = new kakao.maps.LatLng(37.596939, 126.909420);
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+    </script><br>
+<!-- 지도를 표시할 div 입니다 -->
+        <div id="map2" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+        <script>
+           var mapContainer = document.getElementById('map2'), // 지도를 표시할 div
+    mapOption = {
+        center: new kakao.maps.LatLng(37.588757, 126.916986), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 마커가 표시될 위치입니다
+var markerPosition  = new kakao.maps.LatLng(37.588757, 126.916986);
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+    </script><br>
+<!-- 지도를 표시할 div 입니다 -->
+        <div id="map3" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+        <script>
+           var mapContainer = document.getElementById('map3'), // 지도를 표시할 div
+    mapOption = {
+        center: new kakao.maps.LatLng(37.601513, 126.926469), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 마커가 표시될 위치입니다
+var markerPosition  = new kakao.maps.LatLng(37.601513, 126.926469);
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+    </script><br>
+<!-- 지도를 표시할 div 입니다 -->
+        <div id="map4" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+        <script>
+           var mapContainer = document.getElementById('map4'), // 지도를 표시할 div
+    mapOption = {
+        center: new kakao.maps.LatLng(37.593510, 126.918347), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 마커가 표시될 위치입니다
+var markerPosition  = new kakao.maps.LatLng(37.593510, 126.918347);
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+    </script><br>
+<!-- 지도를 표시할 div 입니다 -->
+        <div id="map5" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+        <script>
+           var mapContainer = document.getElementById('map5'), // 지도를 표시할 div
+    mapOption = {
+        center: new kakao.maps.LatLng(37.597547, 126.920497), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 마커가 표시될 위치입니다
+var markerPosition  = new kakao.maps.LatLng(37.597547, 126.920497);
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+    </script><br>
+<!-- 지도를 표시할 div 입니다 -->
+        <div id="map6" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+        <script>
+           var mapContainer = document.getElementById('map6'), // 지도를 표시할 div
+    mapOption = {
+        center: new kakao.maps.LatLng(37.601413, 126.920492), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 마커가 표시될 위치입니다
+var markerPosition  = new kakao.maps.LatLng(37.601413, 126.920492);
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+    </script><br>
+<!-- 지도를 표시할 div 입니다 -->
+        <div id="map7" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+        <script>
+           var mapContainer = document.getElementById('map7'), // 지도를 표시할 div
+    mapOption = {
+        center: new kakao.maps.LatLng(37.602465, 126.922414), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 마커가 표시될 위치입니다
+var markerPosition  = new kakao.maps.LatLng(37.602465, 126.922414);
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+    </script><br>
+<!-- 지도를 표시할 div 입니다 -->
+        <div id="map8" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+        <script>
+           var mapContainer = document.getElementById('map8'), // 지도를 표시할 div
+    mapOption = {
+        center: new kakao.maps.LatLng(37.598097, 126.920187), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 마커가 표시될 위치입니다
+var markerPosition  = new kakao.maps.LatLng(37.598097, 126.920187);
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+    </script><br>
+
+    <div style="margin-top:150px">
+    {% include "footer.html" %}
+    </div>
+
+</body>
+</html>

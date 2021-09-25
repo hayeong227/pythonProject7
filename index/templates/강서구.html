@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <!-- 모든 이미지 폴더 불러오기 -->
+    {% load static %}
+    <!-- 분리된 html 파일 불러오기 -->
+    {% include "header.html" %}
+
+    <div class="container">
+        <h4>서울특별시 강서구 쓰레기통 위치</h4>
+        <table>
+            <tbody>
+                <tr>
+                    <td><a href="강서로"> <button class="btn btn-link">강서로</button></a></td>
+                    <td><a href="개화로"> <button class="btn btn-link">개화로</button></a></td>
+                    <td><a href="공항대로"> <button class="btn btn-link">공항대로</button></a></td>
+                    <td><a href="양천로"> <button class="btn btn-link">양천로</button></a></td>
+                    <td><a href="허준로"> <button class="btn btn-link">허준로</button></a></td>
+                    <td><a href="화곡로"> <button class="btn btn-link">화곡로</button></a></td>
+                    <td><a href="방화대로"> <button class="btn btn-link">방화대로</button></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div style="margin-top:150px">
+    {% include "footer.html" %}
+    </div>
+
+</body>
+</html>
