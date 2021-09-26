@@ -42,4 +42,11 @@ urlpatterns = [
     path("허준로" , views.허준로) ,
     path("화곡로" , views.화곡로) ,
     path("방화대로" , views.방화대로) ,
+    path("성동구" , views.성동구) ,
+    path("왕십리로" , views.왕십리로) ,
+    path("고산자로" , views.고산자로) ,
+    path("독서당로" , views.독서당로) ,
+    path("아차산로" , views.아차산로) ,
+    path("동일로" , views.동일로) ,
+    path("금호로" , views.금호로) ,
 ]

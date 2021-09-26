@@ -78,3 +78,17 @@ def 화곡로( request ) :
     return render( request , "화곡로.html")
 def 방화대로( request ) :
     return render( request , "방화대로.html")
+def 성동구( request ) :
+    return render( request , "성동구.html")
+def 왕십리로( request ) :
+    return render( request , "왕십리로.html")
+def 고산자로( request ) :
+    return render( request , "고산자로.html")
+def 독서당로( request ) :
+    return render( request , "독서당로.html")
+def 아차산로( request ) :
+    return render( request , "아차산로.html")
+def 동일로( request ) :
+    return render( request , "동일로.html")
+def 금호로( request ) :
+    return render( request , "금호로.html")
