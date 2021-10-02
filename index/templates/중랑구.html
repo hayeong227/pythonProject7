@@ -6,16 +6,21 @@
 </head>
 <body>
 
-    <!-- 모든 이미지 폴더 불러오기 -->
+<!-- 모든 이미지 폴더 불러오기 -->
     {% load static %}
     <!-- 분리된 html 파일 불러오기 -->
     {% include "header.html" %}
 
     <div class="container">
+        <h4>서울특별시 중랑구 쓰레기통 위치 안내</h4>
         <table>
             <tbody>
                 <tr>
-                    <td>서울특별시 중랑구 쓰레기통 위치</td>
+                    <td><a href="신내로"> <button class="btn btn-link">신내로</button></a></td>
+                    <td><a href="봉화산로"> <button class="btn btn-link">봉화산로</button></a></td>
+                    <td><a href="용마산로"> <button class="btn btn-link">용마산로</button></a></td>
+                    <td><a href="망우로"> <button class="btn btn-link">망우로</button></a></td>
+                    <td><a href="동일로2"> <button class="btn btn-link">동일로</button></a></td>
                 </tr>
             </tbody>
         </table>
@@ -25,5 +30,6 @@
     <div style="margin-top:150px">
     {% include "footer.html" %}
     </div>
+
 </body>
 </html>

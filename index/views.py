@@ -92,3 +92,27 @@ def 동일로( request ) :
     return render( request , "동일로.html")
 def 금호로( request ) :
     return render( request , "금호로.html")
+def 영등포구( request ) :
+    return render( request , "영등포구.html")
+def 당산로( request ) :
+    return render( request , "당산로.html")
+def 양평로( request ) :
+    return render( request , "양평로.html")
+def 영중로( request ) :
+    return render( request , "영중로.html")
+def 경인로( request ) :
+    return render( request , "경인로.html")
+def 영등포로( request ) :
+    return render( request , "영등포로.html")
+def 여의나루로( request ) :
+    return render( request , "여의나루로.html")
+def 신내로( request ) :
+    return render( request , "신내로.html")
+def 용마산로( request ) :
+    return render( request , "용마산로.html")
+def 봉화산로( request ) :
+    return render( request , "봉화산로.html")
+def 망우로( request ) :
+    return render( request , "망우로.html")
+def 동일로2( request ) :
+    return render( request , "동일로2.html")
