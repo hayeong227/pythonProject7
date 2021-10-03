@@ -116,3 +116,9 @@ def 망우로( request ) :
     return render( request , "망우로.html")
 def 동일로2( request ) :
     return render( request , "동일로2.html")
+def view2( request ) :
+    return render( request , "view2.html")
+def view3( request ) :
+    return render( request , "view3.html")
+def view4( request ) :
+    return render( request , "view4.html")

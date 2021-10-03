@@ -61,4 +61,7 @@ urlpatterns = [
     path("용마산로" , views.용마산로) ,
     path("망우로" , views.망우로) ,
     path("동일로2" , views.동일로2) ,
+    path("view2" , views.view2) ,
+    path("view3" , views.view3) ,
+    path("view4" , views.view4) ,
 ]
