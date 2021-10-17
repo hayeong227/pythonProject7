@@ -13,221 +13,222 @@
 
     <h4>서울특별시 동작구 사당로 쓰레기통 위치 안내</h4><br>
 
-<!-- 지도를 표시할 div 입니다 -->
-        <div id="map" style="width:99%;height:200px;"></div>
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+<!-- 이미지 지도를 표시할 div 입니다 -->
+        <div id="staticMap" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=da7431dddeb93bdee5392bab6c83e353"></script>
         <script>
-           var mapContainer = document.getElementById('map'), // 지도를 표시할 div
-    mapOption = {
-        center: new kakao.maps.LatLng(37.495193, 126.957070), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    };
+// 이미지 지도에 표시할 마커입니다
+// 이미지 지도에 표시할 마커를 아래와 같이 배열로 넣어주면 여러개의 마커를 표시할 수 있습니다
+        var markers = [
+            {
+                position: new kakao.maps.LatLng(37.495193, 126.957070),
+                text: '클릭하면 지도로 이동!' // text 옵션을 설정하면 마커 위에 텍스트를 함께 표시할 수 있습니다
+            }
+        ];
 
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        var staticMapContainer  = document.getElementById('staticMap'), // 이미지 지도를 표시할 div
+            staticMapOption = {
+                center: new kakao.maps.LatLng(37.495193, 126.957070), // 이미지 지도의 중심좌표
+                level: 3, // 이미지 지도의 확대 레벨
+                marker: markers // 이미지 지도에 표시할 마커
+            };
 
-// 마커가 표시될 위치입니다
-var markerPosition  = new kakao.maps.LatLng(37.495193, 126.957070);
+// 이미지 지도를 생성합니다
+        var staticMap = new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
+        </script><br>
 
-// 마커를 생성합니다
-var marker = new kakao.maps.Marker({
-    position: markerPosition
-});
-
-// 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);
-    </script><br>
-
-<!-- 지도를 표시할 div 입니다 -->
-        <div id="map1" style="width:99%;height:200px;"></div>
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+    <!-- 이미지 지도를 표시할 div 입니다 -->
+        <div id="staticMap1" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=da7431dddeb93bdee5392bab6c83e353"></script>
         <script>
-           var mapContainer = document.getElementById('map1'), // 지도를 표시할 div
-    mapOption = {
-        center: new kakao.maps.LatLng(37.494866, 126.960136), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    };
+// 이미지 지도에 표시할 마커입니다
+// 이미지 지도에 표시할 마커를 아래와 같이 배열로 넣어주면 여러개의 마커를 표시할 수 있습니다
+        var markers = [
+            {
+                position: new kakao.maps.LatLng(37.494866, 126.960136),
+                text: '여기야 여기!' // text 옵션을 설정하면 마커 위에 텍스트를 함께 표시할 수 있습니다
+            }
+        ];
 
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        var staticMapContainer  = document.getElementById('staticMap1'), // 이미지 지도를 표시할 div
+            staticMapOption = {
+                center: new kakao.maps.LatLng(37.494866, 126.960136), // 이미지 지도의 중심좌표
+                level: 3, // 이미지 지도의 확대 레벨
+                marker: markers // 이미지 지도에 표시할 마커
+            };
 
-// 마커가 표시될 위치입니다
-var markerPosition  = new kakao.maps.LatLng(37.494866, 126.960136);
+// 이미지 지도를 생성합니다
+        var staticMap = new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
+        </script><br>
 
-// 마커를 생성합니다
-var marker = new kakao.maps.Marker({
-    position: markerPosition
-});
-
-// 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);
-    </script><br>
-
-<!-- 지도를 표시할 div 입니다 -->
-        <div id="map2" style="width:99%;height:200px;"></div>
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+    <!-- 이미지 지도를 표시할 div 입니다 -->
+        <div id="staticMap2" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=da7431dddeb93bdee5392bab6c83e353"></script>
         <script>
-           var mapContainer = document.getElementById('map2'), // 지도를 표시할 div
-    mapOption = {
-        center: new kakao.maps.LatLng(37.484098, 126.977318), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    };
+// 이미지 지도에 표시할 마커입니다
+// 이미지 지도에 표시할 마커를 아래와 같이 배열로 넣어주면 여러개의 마커를 표시할 수 있습니다
+        var markers = [
+            {
+                position: new kakao.maps.LatLng(37.484098, 126.977318),
+                text: '여기야 여기!' // text 옵션을 설정하면 마커 위에 텍스트를 함께 표시할 수 있습니다
+            }
+        ];
 
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        var staticMapContainer  = document.getElementById('staticMap2'), // 이미지 지도를 표시할 div
+            staticMapOption = {
+                center: new kakao.maps.LatLng(37.484098, 126.977318), // 이미지 지도의 중심좌표
+                level: 3, // 이미지 지도의 확대 레벨
+                marker: markers // 이미지 지도에 표시할 마커
+            };
 
-// 마커가 표시될 위치입니다
-var markerPosition  = new kakao.maps.LatLng(37.484098, 126.977318);
+// 이미지 지도를 생성합니다
+        var staticMap = new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
+        </script><br>
 
-// 마커를 생성합니다
-var marker = new kakao.maps.Marker({
-    position: markerPosition
-});
-
-// 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);
-    </script><br>
-
-<!-- 지도를 표시할 div 입니다 -->
-        <div id="map3" style="width:99%;height:200px;"></div>
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+    <!-- 이미지 지도를 표시할 div 입니다 -->
+        <div id="staticMap3" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=da7431dddeb93bdee5392bab6c83e353"></script>
         <script>
-           var mapContainer = document.getElementById('map3'), // 지도를 표시할 div
-    mapOption = {
-        center: new kakao.maps.LatLng(37.483171, 126.975182), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    };
+// 이미지 지도에 표시할 마커입니다
+// 이미지 지도에 표시할 마커를 아래와 같이 배열로 넣어주면 여러개의 마커를 표시할 수 있습니다
+        var markers = [
+            {
+                position: new kakao.maps.LatLng(37.483171, 126.975182),
+                text: '여기야 여기!' // text 옵션을 설정하면 마커 위에 텍스트를 함께 표시할 수 있습니다
+            }
+        ];
 
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        var staticMapContainer  = document.getElementById('staticMap3'), // 이미지 지도를 표시할 div
+            staticMapOption = {
+                center: new kakao.maps.LatLng(37.483171, 126.975182), // 이미지 지도의 중심좌표
+                level: 3, // 이미지 지도의 확대 레벨
+                marker: markers // 이미지 지도에 표시할 마커
+            };
 
-// 마커가 표시될 위치입니다
-var markerPosition  = new kakao.maps.LatLng(37.483171, 126.975182);
+// 이미지 지도를 생성합니다
+        var staticMap = new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
+        </script><br>
 
-// 마커를 생성합니다
-var marker = new kakao.maps.Marker({
-    position: markerPosition
-});
-
-// 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);
-    </script><br>
-
-<!-- 지도를 표시할 div 입니다 -->
-        <div id="map4" style="width:99%;height:200px;"></div>
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+    <!-- 이미지 지도를 표시할 div 입니다 -->
+        <div id="staticMap4" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=da7431dddeb93bdee5392bab6c83e353"></script>
         <script>
-           var mapContainer = document.getElementById('map4'), // 지도를 표시할 div
-    mapOption = {
-        center: new kakao.maps.LatLng(37.484569, 126.971206), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    };
+// 이미지 지도에 표시할 마커입니다
+// 이미지 지도에 표시할 마커를 아래와 같이 배열로 넣어주면 여러개의 마커를 표시할 수 있습니다
+        var markers = [
+            {
+                position: new kakao.maps.LatLng(37.484569, 126.971206),
+                text: '여기야 여기!' // text 옵션을 설정하면 마커 위에 텍스트를 함께 표시할 수 있습니다
+            }
+        ];
 
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        var staticMapContainer  = document.getElementById('staticMap4'), // 이미지 지도를 표시할 div
+            staticMapOption = {
+                center: new kakao.maps.LatLng(37.484569, 126.971206), // 이미지 지도의 중심좌표
+                level: 3, // 이미지 지도의 확대 레벨
+                marker: markers // 이미지 지도에 표시할 마커
+            };
 
-// 마커가 표시될 위치입니다
-var markerPosition  = new kakao.maps.LatLng(37.484569, 126.971206);
+// 이미지 지도를 생성합니다
+        var staticMap = new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
+        </script><br>
 
-// 마커를 생성합니다
-var marker = new kakao.maps.Marker({
-    position: markerPosition
-});
-
-// 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);
-    </script><br>
-
-<!-- 지도를 표시할 div 입니다 -->
-        <div id="map5" style="width:99%;height:200px;"></div>
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+    <!-- 이미지 지도를 표시할 div 입니다 -->
+        <div id="staticMap5" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=da7431dddeb93bdee5392bab6c83e353"></script>
         <script>
-           var mapContainer = document.getElementById('map5'), // 지도를 표시할 div
-    mapOption = {
-        center: new kakao.maps.LatLng(37.484520, 126.979769), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    };
+// 이미지 지도에 표시할 마커입니다
+// 이미지 지도에 표시할 마커를 아래와 같이 배열로 넣어주면 여러개의 마커를 표시할 수 있습니다
+        var markers = [
+            {
+                position: new kakao.maps.LatLng(37.484520, 126.979769),
+                text: '여기야 여기!' // text 옵션을 설정하면 마커 위에 텍스트를 함께 표시할 수 있습니다
+            }
+        ];
 
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        var staticMapContainer  = document.getElementById('staticMap5'), // 이미지 지도를 표시할 div
+            staticMapOption = {
+                center: new kakao.maps.LatLng(37.484520, 126.979769), // 이미지 지도의 중심좌표
+                level: 3, // 이미지 지도의 확대 레벨
+                marker: markers // 이미지 지도에 표시할 마커
+            };
 
-// 마커가 표시될 위치입니다
-var markerPosition  = new kakao.maps.LatLng(37.484520, 126.979769);
+// 이미지 지도를 생성합니다
+        var staticMap = new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
+        </script><br>
 
-// 마커를 생성합니다
-var marker = new kakao.maps.Marker({
-    position: markerPosition
-});
-
-// 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);
-    </script><br>
-
-<!-- 지도를 표시할 div 입니다 -->
-        <div id="map6" style="width:99%;height:200px;"></div>
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+    <!-- 이미지 지도를 표시할 div 입니다 -->
+        <div id="staticMap6" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=da7431dddeb93bdee5392bab6c83e353"></script>
         <script>
-           var mapContainer = document.getElementById('map6'), // 지도를 표시할 div
-    mapOption = {
-        center: new kakao.maps.LatLng(37.483379, 126.976223), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    };
+// 이미지 지도에 표시할 마커입니다
+// 이미지 지도에 표시할 마커를 아래와 같이 배열로 넣어주면 여러개의 마커를 표시할 수 있습니다
+        var markers = [
+            {
+                position: new kakao.maps.LatLng(37.483379, 126.976223),
+                text: '여기야 여기!' // text 옵션을 설정하면 마커 위에 텍스트를 함께 표시할 수 있습니다
+            }
+        ];
 
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        var staticMapContainer  = document.getElementById('staticMap6'), // 이미지 지도를 표시할 div
+            staticMapOption = {
+                center: new kakao.maps.LatLng(37.483379, 126.976223), // 이미지 지도의 중심좌표
+                level: 3, // 이미지 지도의 확대 레벨
+                marker: markers // 이미지 지도에 표시할 마커
+            };
 
-// 마커가 표시될 위치입니다
-var markerPosition  = new kakao.maps.LatLng(37.483379, 126.976223);
+// 이미지 지도를 생성합니다
+        var staticMap = new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
+        </script><br>
 
-// 마커를 생성합니다
-var marker = new kakao.maps.Marker({
-    position: markerPosition
-});
-
-// 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);
-    </script><br>
-
-<!-- 지도를 표시할 div 입니다 -->
-        <div id="map7" style="width:99%;height:200px;"></div>
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+    <!-- 이미지 지도를 표시할 div 입니다 -->
+        <div id="staticMap7" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=da7431dddeb93bdee5392bab6c83e353"></script>
         <script>
-           var mapContainer = document.getElementById('map7'), // 지도를 표시할 div
-    mapOption = {
-        center: new kakao.maps.LatLng(37.488977, 126.965835), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    };
+// 이미지 지도에 표시할 마커입니다
+// 이미지 지도에 표시할 마커를 아래와 같이 배열로 넣어주면 여러개의 마커를 표시할 수 있습니다
+        var markers = [
+            {
+                position: new kakao.maps.LatLng(37.488977, 126.965835),
+                text: '여기야 여기!' // text 옵션을 설정하면 마커 위에 텍스트를 함께 표시할 수 있습니다
+            }
+        ];
 
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        var staticMapContainer  = document.getElementById('staticMap7'), // 이미지 지도를 표시할 div
+            staticMapOption = {
+                center: new kakao.maps.LatLng(37.488977, 126.965835), // 이미지 지도의 중심좌표
+                level: 3, // 이미지 지도의 확대 레벨
+                marker: markers // 이미지 지도에 표시할 마커
+            };
 
-// 마커가 표시될 위치입니다
-var markerPosition  = new kakao.maps.LatLng(37.488977, 126.965835);
+// 이미지 지도를 생성합니다
+        var staticMap = new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
+        </script><br>
 
-// 마커를 생성합니다
-var marker = new kakao.maps.Marker({
-    position: markerPosition
-});
-
-// 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);
-    </script><br>
-
-<!-- 지도를 표시할 div 입니다 -->
-        <div id="map8" style="width:99%;height:200px;"></div>
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	da7431dddeb93bdee5392bab6c83e353"></script>
+    <!-- 이미지 지도를 표시할 div 입니다 -->
+        <div id="staticMap8" style="width:99%;height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=da7431dddeb93bdee5392bab6c83e353"></script>
         <script>
-           var mapContainer = document.getElementById('map8'), // 지도를 표시할 div
-    mapOption = {
-        center: new kakao.maps.LatLng(37.484487, 126.979162), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    };
+// 이미지 지도에 표시할 마커입니다
+// 이미지 지도에 표시할 마커를 아래와 같이 배열로 넣어주면 여러개의 마커를 표시할 수 있습니다
+        var markers = [
+            {
+                position: new kakao.maps.LatLng(37.484487, 126.979162),
+                text: '여기야 여기!' // text 옵션을 설정하면 마커 위에 텍스트를 함께 표시할 수 있습니다
+            }
+        ];
 
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        var staticMapContainer  = document.getElementById('staticMap8'), // 이미지 지도를 표시할 div
+            staticMapOption = {
+                center: new kakao.maps.LatLng(37.484487, 126.979162), // 이미지 지도의 중심좌표
+                level: 3, // 이미지 지도의 확대 레벨
+                marker: markers // 이미지 지도에 표시할 마커
+            };
 
-// 마커가 표시될 위치입니다
-var markerPosition  = new kakao.maps.LatLng(37.484487, 126.979162);
+// 이미지 지도를 생성합니다
+        var staticMap = new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
+        </script><br>
 
-// 마커를 생성합니다
-var marker = new kakao.maps.Marker({
-    position: markerPosition
-});
-
-// 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);
-    </script><br>
 
     <div style="margin-top:150px">
     {% include "footer.html" %}
